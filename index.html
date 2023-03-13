@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"/>
+</head>
+<body>
+    <div> 
+<form onsubmit="savetoLocalStorage(event)">
+    <label> Name: </label>
+    <input type="text" name="username" id="username" >
+    <label> Email</label>
+    <input type="email" name="email" id="mail">
+    <label > Phone Number: </label>
+    <input type="tel" name="contact" id="mob" required>
+    <input type="submit" class="btn btn-info" value="Submit" />
+    <ul id="listofitems"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+</form>
+</div>
+<script src="dom.js"> </script>
+</body>
+</html>
